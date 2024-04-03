@@ -1,0 +1,181 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    scroll-behavior: smooth;
+    --bg:rgb(214,178,56);
+    --bg2: #dad9d9;
+    --bgprincipal :#57636e;
+    --btn-color: #FC2947;
+    --img-scale: 1.001;
+    --amarillo :#f1b510;
+    --bg-black: #292929;
+    --btn-green: #99d217 ;
+    --title-color: #fb4409;
+}
+html,body{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image:linear-gradient(to right, rgb(67, 67, 67,0.5) 0%, rgb(0, 0, 0,0.6) 100%),url('../img/paisaje3rec.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-family: 'Oswald', Helvetica, sans-serif;
+}
+#quiz{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255,0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* background: #e3f3f5; */
+    width: 30rem;
+    padding: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: #dad9d9;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.8px 0;
+    text-shadow: 0px 0px 5px #638253;
+    text-transform: uppercase;
+}
+#question{
+    font-size: 1.7rem;
+    color: #000;
+    /* text-shadow: 0px 0px 5px #ce1720; */
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.button{
+    background:rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #000;
+    width:100%;
+    font-size: 18px;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    outline: 0;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    border-radius: .4rem;
+    /* text-shadow: 0px 0px 5px #111; */
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #032c5e;
+}
+#progress{
+    font-size: 20px;
+}
+#choices{
+    padding-left: 0;
+    padding-right: 0;
+}
+.button-box-oferta{
+    width: 18rem;
+    display: flex;
+    max-width: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.button-call{
+    width: 100%;
+    opacity: 1;
+    cursor: pointer;
+    background-color: #efff04;
+    border: .05rem solid #d4da2b;
+    border-radius: .6875rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25rem;
+    padding: 1.2rem 0;
+    color: #f3f3f3;
+    background-image: linear-gradient(#ff4704, #af1919);
+    border-width: .1rem;
+    border-color: #880f01;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    box-shadow: 0 0 8rem -.5rem rgba(216, 22, 0, 0);
+    text-transform: uppercase;
+}
+.button-box-oferta :hover{
+    background: #ff4704;
+    color: #fff;
+    border-color: #ff4704;
+    box-shadow: 0 0 5px #ff4704,
+              0 0 25px #ff4704,
+              0 0 50px #ff4704,
+              0 0 100px #ff4704;
+}
+.logo{
+    margin-top: 25px;
+    width: 50px ;
+    height: 50px;
+    background: url('../img/logosimpleblancoevolucion.png') no-repeat;
+    background-size: contain;
+    border-radius: 50% ;
+    
+}
+@media screen and (max-width:400px) {
+    #quiz{
+        width: 90%;
+        padding: .6rem;
+    }
+    #quiz h1{
+        font-size: 2rem;
+        padding: 2px 0;
+    }
+    #question{
+        padding: 5px 0px;
+        font-size: 1.3rem;
+    }
+    #choices{
+        width: 100%;
+    }
+    .button{
+        width:100%;
+        font-size: 16px;
+        padding: 10px 7px;
+        margin: 10px 0;
+        outline: 0;
+    }
+    .button-box-oferta{
+        width: 80%;
+    }
+}
