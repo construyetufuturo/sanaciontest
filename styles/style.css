@@ -68,7 +68,7 @@ h1{
 #question{
     font-size: 1.7rem;
     color: #000;
-    /* text-shadow: 0px 0px 5px #ce1720; */
+    /* text-shadow: 0px 0px 5px rgb(165,107,210); */
     text-transform: uppercase;
     font-weight: 600;
 }

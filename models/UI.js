@@ -32,6 +32,7 @@ export class UI{
         const loading = `<h1>Cargando ...</h1>`
         const element = document.getElementById('quiz')
         element.innerHTML=loading;
+        
     }
     
     /**
@@ -56,7 +57,7 @@ export class UI{
         <h2> Puntaje: ${score}/120 </h2>
         <h1> Necesitas ver este video </h1>
         <div class="button-box-oferta">
-        <a href="" class="button-call" target="_blank"><p>Ver Video</p></a>
+        <a href="sanacion.html" class="button-call" target="_blank"><p>Ver Video</p></a>
         
         </div>
         `
