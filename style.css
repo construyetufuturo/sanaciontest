@@ -61,7 +61,6 @@ header{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-
     
 }
 .post-video-section .barra-up{
@@ -90,6 +89,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    
 }
 .contenedor-video .encabezado{
     width: 60%;
@@ -153,7 +153,7 @@ header{
     /* box-shadow: rgba(12, 137, 238,0.5) 0px 4px 16px, rgba(25, 141, 223, 0.35) 0px 8px 24px, rgba(60, 165, 241, 0.35) 0px 16px 56px; */
     /* box-shadow: rgba(2, 123, 237, 0.35) 0px 5px 15px; */
     /* box-shadow: rgb(113, 233, 221) 0px 7px 29px 0px; */
-    box-shadow: rgba(113, 233, 221) 0px 2px 8px 0px;
+    box-shadow: #71e9dd 0px 2px 8px 0px;
     border-radius: 20px;
     
 }
@@ -238,6 +238,7 @@ header{
     box-shadow: 0 0 8rem -.5rem rgba(216, 22, 0, 0);
     text-transform: uppercase;
     margin-bottom: 3px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .contenedor-oferta .button-box-oferta :hover{
     background: #ff4704;
@@ -248,7 +249,9 @@ header{
               0 0 50px #ff4704,
               0 0 100px #ff4704;
 }
-
+#button-call-begin,#confirmation-text-3-begin,#hidden{
+    display: none;
+}
 /* CALL TO ACTOIN */
 
 /* PRECIO OFERTA 1 */
@@ -1516,6 +1519,13 @@ footer{
     .gatillo-progress-bar .progress-container .progress-bar{
        width: 600px;
     }
+    .video-conteiner{width: 95%;}
+    .video-section h3{
+        font-size: 34px;
+    }
+    .encabezado h4{
+        font-size: 24px;
+    }
 }
 @media screen and (max-width:800px) {
     .menu-nav{
@@ -1573,7 +1583,7 @@ footer{
      .contenedor-img-instructor{
         margin-bottom: 25px;
     }
-    .video-conteiner, .modulo-titulo, .mod-descripcion{
+     .modulo-titulo, .mod-descripcion{
         width: 100%;
         margin: 0 auto ;
     }
@@ -1630,6 +1640,7 @@ footer{
     
     
     
+    
 }
 @media screen and (max-width: 768px) {
     .slide p {
@@ -1661,12 +1672,22 @@ footer{
     .enunciado-perfil .checklist-servicio-perfil{
         width: 100%;
     }
-    .preguntas-section img{
+    .preguntas-section img,.video-section .encabezado{
         width: 90%;
     }
     
-    
-    
+    .video-section h3{
+        font-size: 24px;
+    }
+    .encabezado h4{
+        font-size: 18px;
+    }
+    .encabezado h2{
+        font-size: 14px;
+    }
+    .contenedor-oferta .button-box-oferta{
+        width: 25rem;
+    }
     
 }
 @media screen and (max-width:500px){
@@ -1714,7 +1735,7 @@ footer{
     .contenedor-testimonios{
         width: 50%;
     }
-    .garantia,.contenedor-garantia,.contenedor-oferta{
+    .garantia,.contenedor-garantia{
         width: 100%;
         min-height: 300px;
     }
@@ -1755,6 +1776,14 @@ footer{
         /* background-color: #16213E; */
         /* background-color: #25344f; */
     }
+    .post-video-section{
+        height: 30px;
+        
+    }
+    .contenedor-oferta{
+        min-height: 180px;
+    }
+    
     
     
 }
@@ -1762,9 +1791,6 @@ footer{
      
     .contenedor{
         padding-top: 25px;
-    }
-    .encabezado h1{
-        font-size: 18px;
     }
     .subtitulo{
         font-size: 28px;
@@ -1782,19 +1808,19 @@ footer{
     .inscripcion-section h1{
         font-size: 40px;
     }
-    .contenedor-oferta .button-box{
-        min-height:230px;
+    .contenedor-oferta .button-box-oferta{
+        min-height:125px;
         width: 90%;
     }
     .modulo-titulo h4{
         font-size: 18px;
     }
-    .button-box .metodos-pago{
+    .contenedor-oferta .metodos-pago{
         width: 100%;
         height: 100%;
         /* background-color: white; */
     }
-    .button-box .metodos-pago img{
+    .contenedor-oferta .metodos-pago img{
         object-fit: contain;
         width: 100%;
         height: 50%;
@@ -1822,8 +1848,22 @@ footer{
         width: 40px;
         height: 40px;
     }
-    
-    
+    .contenedor-oferta .button-box-oferta,.confirmation-text-3{
+        width: 85%;
+
+    }
+    .contenedor-oferta .button-call,.contenedor .seccion-titulo-instruccion,.encabezado h4{
+        font-size: 1rem;
+    }
+    .confirmation-text-3{
+        font-size: .6rem;
+    }
+    .encabezado h3{
+        font-size: 1.2rem;
+    }
+    .encabezado h2{
+        font-size: 10px;
+    }
     
 }
 
@@ -1851,9 +1891,7 @@ footer{
     .subtitulo{
         font-size: 20px;
     }
-    .encabezado h1{
-        font-size: 15px;
-    }
+    
     .img-galeria{
         width: 95%;
     }
@@ -1901,6 +1939,9 @@ footer{
     .gatillo-progress-bar .progress-container .progress-bar{
         width: 100%;
         height: 20px;
+    }
+    .contenedor-oferta .button-call{
+        font-size: .7rem;
     }
     
 }

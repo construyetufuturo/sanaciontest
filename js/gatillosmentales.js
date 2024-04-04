@@ -44,7 +44,7 @@ async function mostrargatillo2(cantidadcompradores,totalcupos) {
       if(cantidadcupos==1){
         clearInterval(funcionresetar);
         cantidadcompradores=4;
-        window.alert("Ampliamos los cupos hasta HOY!, no esperes más,");
+        // window.alert("Ampliamos los cupos hasta HOY!, no esperes más,");
     }
 }
 
@@ -76,8 +76,14 @@ function ubicaciongatillo(){
     
   }
 }
+// Obtener el elemento del video
 
-// bandera
+setTimeout(() => {
+  document.getElementById('button-call-begin').style.display='block';
+  document.getElementById('confirmation-text-3-begin').style.display='block';
+  document.getElementById('hidden').style.display='block';
+}, 30000);
+bandera
 function ubicacionbandera(){
   try{
     let banderamsg = document.querySelector(".contenedorbandera");

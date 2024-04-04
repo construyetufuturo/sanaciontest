@@ -57,6 +57,8 @@ function contarSlider(){
 }
 contarSlider();
 
-// PROGRESS HORIZONTAL BAR END
+// VIDEO CONTROL
+// Obtener el elemento del video
+
 
 
