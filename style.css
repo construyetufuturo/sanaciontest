@@ -687,6 +687,10 @@ a:link, a:visited, a:active {
     animation: flecharight1 1s ease-in-out infinite;
     margin-left: 9px;
 }
+.indicacionflechaabajo i{
+    animation: flecharight1 1s ease-in-out infinite;
+    color: #fff; font-size: 1.7rem; padding: 1rem 0;
+}
 
 @keyframes flecharight1 {
     0%,
@@ -695,7 +699,7 @@ a:link, a:visited, a:active {
     }
 
     50% {
-        transform: translate(10px, 0);
+        transform: translate(0,10px);
     }
   }
 .container-hand{
