@@ -1378,35 +1378,34 @@ footer{
     font-weight: 500;
 }
 .logo{
-    width: 100px ;
-    height: 100px;
+    width: 55px ;
+    height: 55px;
     background: url(img/logosimpleblancoevolucion.png) no-repeat;
     background-size: contain;
     border-radius: 50% ;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
 }
 .social-media{
     width: 50%;
     display: flex;
     justify-content: flex-end;
+    z-index: 13;
 }
 .social-media-icon{
     display: inline-block;
-    margin-left: 20px;
     width: 60px;
     height: 60px;
     /* border: 1px solid #fff; */
     border-radius: 50%;
     text-align: center;
     color: #fff;
+    background-color: green;
+    
+}
 
-}
-.social-media-icon:hover{
-    /* background-color: #fff; */
-    color: #0aed5d;
-}
 .social-media-icon i{
-    font-size: 30px;
+    font-size: 41px;
+    padding-right: 2px;
     line-height: 60px;
 }
 .line{
@@ -1848,7 +1847,7 @@ footer{
         width: 40px;
         height: 40px;
     }
-    .contenedor-oferta .button-box-oferta,.confirmation-text-3{
+    .contenedor-oferta .button-box-oferta,.confirmation-text-3,.img-comprasegura{
         width: 85%;
 
     }
@@ -1904,7 +1903,7 @@ footer{
     .contenedor-img-instructor{
         margin-bottom: 25px;
     }
-    .contenedor-bonos,.contenedor-modulos, .modulo, .img-producto,.pg-container,.img-comprasegura{
+    .contenedor-bonos,.contenedor-modulos, .modulo, .img-producto,.pg-container{
         width: 100%;
     }
     .garantia{

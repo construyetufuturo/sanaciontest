@@ -43,7 +43,7 @@ body{
 }
 #quiz{
     /* From https://css.glass */
-    background: rgba(255, 255, 255,0.2);
+    background: rgba(19, 18, 18, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -58,7 +58,15 @@ body{
     align-items: center;
 }
 h1{
-    color: #dad9d9;
+    color: #000;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.8px 0;
+    text-shadow: 0px 0px 5px #638253;
+    text-transform: uppercase;
+}
+h3{
+    color: #bbb2b2;
     font-size: 2rem;
     text-align: center;
     padding: 1.8px 0;
@@ -67,10 +75,12 @@ h1{
 }
 #question{
     font-size: 1.7rem;
-    color: #000;
+    /* color: #000; */
+    color: #dad9d9;
     /* text-shadow: 0px 0px 5px rgb(165,107,210); */
     text-transform: uppercase;
     font-weight: 600;
+    text-shadow: 0px 0px 5px #638253;
 }
 .button{
     background:rgba(255, 255, 255, 0.3);

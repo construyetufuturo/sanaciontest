@@ -76,13 +76,12 @@ function ubicaciongatillo(){
     
   }
 }
+
 // Obtener el elemento del video
 
 setTimeout(() => {
   document.getElementById('button-call-begin').style.display='block';
-  document.getElementById('confirmation-text-3-begin').style.display='block';
-  document.getElementById('hidden').style.display='block';
-}, 30000);
+}, 180000);
 bandera
 function ubicacionbandera(){
   try{
@@ -99,6 +98,7 @@ function ubicacionbandera(){
 
   }
 }
+
 ubicaciongatillo();
 ubicacionbandera();
 function recargarpagina(){

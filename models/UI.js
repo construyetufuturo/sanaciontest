@@ -29,7 +29,7 @@ export class UI{
         }
     }
     showLoading() {
-        const loading = `<h1>Cargando ...</h1>`
+        const loading = `<h3>Cargando ...</h3>`
         const element = document.getElementById('quiz')
         element.innerHTML=loading;
         
@@ -41,21 +41,21 @@ export class UI{
      */
     showScore(score){
         const quizendHTML1 = `
-        <h1> Resultado</h1>
+        <h3> Resultado</h3>
         <h2> Puntaje: ${score} /120 </h2>
-        <h1> ¡FELICIDAES! </h1>
+        <h3> ¡FELICIDAES! </h3>
         <h2> Gozas de una vida plena y estas en un buen camino. </h2>
         `
         const quizendHTML2 = `
-        <h1> Resultado</h1>
+        <h3> Resultado</h3>
         <h2> Puntaje: ${score}/120 </h2>
-        <h1> ¡FELICIDAES! </h1>
+        <h3> ¡FELICIDAES! </h3>
         <h2> Tienes buenos principios, te conoces y estas en evolución </h2>
         `
         const quizendHTML3 = `
-        <h1> Resultado</h1>
+        <h3> Resultado</h3>
         <h2> Puntaje: ${score}/120 </h2>
-        <h1> Necesitas ver este video </h1>
+        <h3> Necesitas ver este video </h3>
         <div class="button-box-oferta">
         <a href="sanacion.html" class="button-call"><p>Ver Video</p></a>
         

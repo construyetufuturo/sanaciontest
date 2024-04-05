@@ -4,7 +4,7 @@
         year: 2024, // required
         month: date.getMonth()+1, // required
         // day: date.getDate()+4, // required
-        day: 15+2, // required
+        day: 11, // required
         hours: 23, // Default is 0 [0-23] integer
         minutes: 44, // Default is 0 [0-59] integer
         seconds: 0, // Default is 0 [0-59] integer
