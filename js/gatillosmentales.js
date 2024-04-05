@@ -12,6 +12,29 @@ function getRndInteger(min, max) {
 }
 // mostrarUbicacion(getRndInteger(min, max)  ,getCity())
 
+async function getData(){
+  try {
+    // var ciudad="";
+    // fetch("https://ipinfo.io/json")
+    // fetch("https://ipinfo.io/json?token=c56d815590f46d")
+    // fetch("https://ipwhois.app/json/")
+    fetch("http://ip-api.com/json/?fields=61439")
+    .then((response) => response.json())
+    .then((data)=> {
+          console.log("country: ", data.country);
+          let country = data.country;
+          return  country.toString();  
+    })
+    .catch(function(error) {
+      console.log(error)
+      
+    });
+    console.log(ciudad)
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 async function mostrargatillo1(cantidadpersonas,cantidadpersonascompra) {
   h2etiquetapart1 =`
             <h2> <span id="cantidad">${cantidadpersonas}</span> personas estan
@@ -44,7 +67,7 @@ async function mostrargatillo2(cantidadcompradores,totalcupos) {
       if(cantidadcupos==1){
         clearInterval(funcionresetar);
         cantidadcompradores=4;
-        // window.alert("Ampliamos los cupos hasta HOY!, no esperes más,");
+        
     }
 }
 
@@ -77,12 +100,7 @@ function ubicaciongatillo(){
   }
 }
 
-// Obtener el elemento del video
-
-setTimeout(() => {
-  document.getElementById('button-call-begin').style.display='block';
-}, 180000);
-bandera
+// bandera
 function ubicacionbandera(){
   try{
     let banderamsg = document.querySelector(".contenedorbandera");
@@ -98,7 +116,6 @@ function ubicacionbandera(){
 
   }
 }
-
 ubicaciongatillo();
 ubicacionbandera();
 function recargarpagina(){
@@ -118,6 +135,4 @@ function recargarpagina(){
 // function NoBack(){
 //   history.go(1)
 //   }
-//recargarpagina();
-// NoBack();
-
+recargarpagina();
