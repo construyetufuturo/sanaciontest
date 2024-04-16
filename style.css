@@ -1252,6 +1252,7 @@ a:link, a:visited, a:active {
 }
 .modulo-titulo h4{
     color: var(--bg);
+    
 }
 .modulo-titulo span, .pregunta-titulo span{
     float: right;
@@ -1866,6 +1867,9 @@ footer{
     }
     .encabezado h2{
         font-size: 10px;
+    }
+    .preguntas-section .modulo h4{
+        font-size: 15px;
     }
     
 }

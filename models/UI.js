@@ -43,7 +43,7 @@ export class UI{
         const quizendHTML1 = `
         <h3> Resultado</h3>
         <h2> Puntaje: ${score} /120 </h2>
-        <h3> ¡FELICIDAES! </h3>
+        <h3> ¡FELICIDADES! </h3>
         <h2> Gozas de una vida plena y estas en un buen camino. </h2>
         `
         const quizendHTML2 = `
